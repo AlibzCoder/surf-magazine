@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Articles from "./Articles";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import Hero from "./Hero";
+import MediaContent from "./MediaContent";
+import Shop from "./Shop";
+import Subscribe from "./Subscribe";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+    return <div className="app">
+
+        <Hero />
+
+        <div className="quote">
+            <p className="quote-text">
+                Surfing is the most blissful experience you can have on this planet, a taste of heaven.
+            </p>
+            <span className="uppercase">John McCarthy</span>
+            <hr className="vertical-hr"/>
+        </div>
+
+
+        <MediaContent />
+        <Shop />
+        <Articles />
+        <Subscribe />
+        <Contact />
+        <Footer />
     </div>
-  );
 }
-
 export default App;

@@ -1,0 +1,75 @@
+.articles {
+    margin-top: 15em;
+
+    .article {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .article-title {
+        font-size: 1.75rem;
+        position: relative;
+        h1 {
+            color: $lightBlack;
+        }
+        span {
+            font-size: 10rem;
+            color: $visibleWhite;
+            user-select: none;
+        }
+        .underline-title {
+            position: absolute;
+            bottom: 15%;
+        }
+    }
+
+    a {
+        font-size: 0.75rem;
+    }
+    p {
+        margin-bottom: 5em;
+    }
+    img {
+        width: 100%;
+    }
+
+    .article-img {
+        position: relative;
+
+        p {
+            position: absolute;
+            top: 10%;
+            transform: rotate(-90deg);
+            font-size: 0.7rem;
+            opacity: 0.5;
+        }
+    }
+
+    .article-1 {
+        .article-img {
+            width: 100%;
+        }
+        .article-content {
+            width: 60%;
+            padding: 0 10em 0 8em;
+        }
+        .article-img p {
+            right: -7.5em;
+        }
+    }
+
+    .article-2 {
+        justify-content: center;
+        margin-top: 7.5em;
+        .article-img {
+            width: 45%;
+        }
+        .article-content {
+            width: 40%;
+            padding: 0 8em;
+        }
+        .article-img p {
+            left: -7.5em;
+        }
+    }
+}

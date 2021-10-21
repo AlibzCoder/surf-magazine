@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "PlayfairDisplay-Bold";
+    src: url("./assets/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "PlayfairDisplay-Regular";
+    src: url("./assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("./assets/fonts/Poppins-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "LeagueSpartan-Bold";
+    src: url("./assets/fonts/LeagueSpartan-Bold.ttf") format("truetype");
+}
+
+$blue: #5da8ef;
+$black: #0b0c11;
+$lightBlack: #333;
+$gray: #8f8f8f;
+$lightGray: #e8e8e8;
+$visibleWhite:#f9f9f9;
+$pink: #ce60a8;
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+* {
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: $blue;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: PlayfairDisplay-Bold;
+}
+
+p {
+    font-family: Poppins-Light;
+    color: $gray;
+}
+
+.blue {
+    color: $blue;
+}
+
+.uppercase {
+    font-family: LeagueSpartan-Bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.underline {
+    border-bottom: 2px solid $blue;
+}
+
+.quote-text {
+    font-family: PlayfairDisplay-Regular;
+    color: $lightBlack;
+    font-size: 2.25rem;
+}
+
+hr.vertical-hr {
+    display: block;
+    width: 2px;
+    border: none;
+    background: currentColor;
+    min-height: 10em;
+    margin: 3em auto;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    transition: color 0.2s;
+    color: $black;
+    &:hover {
+        color: $blue;
+    }
+}
+
+#root {
+    padding: 0 10em;
+}
+.app {
+    border-right: 1px solid rgb(0, 0, 0, 0.035);
+    border-left: 1px solid rgb(0, 0, 0, 0.035);
+}
+
+.quote {
+    width: 50%;
+    text-align: center;
+    margin: 15em auto 5em;
+
+    .uppercase {
+        color: $lightBlack;
+    }
+    hr {
+        width: 4px;
+        color: $blue;
+    }
+}
+
+.underline-title h1 {
+    display: inline-block;
+    margin: 0;
+
+    &:first-child{
+        padding-bottom: 0.15em;
+        border-bottom: 2px solid $blue;
+    }
+}
+
+@import "./styles/hero";
+@import "./styles/media-content";
+@import "./styles/shop";
+@import "./styles/articles";
+@import "./styles/subscribe";
+@import "./styles/contact";
+@import "./styles/footer";

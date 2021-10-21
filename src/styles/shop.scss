@@ -1,0 +1,65 @@
+.shop {
+    padding-top: 10em;
+    .center h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: $lightBlack;
+    }
+
+    .boards {
+        margin-top: 5em;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-evenly;
+
+        .board-back {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            &::after {
+                content: " ";
+                inset: 0;
+                top: 30%;
+                bottom: -5%;
+                background-color: $lightGray;
+                position: absolute;
+                z-index: -1;
+            }
+        }
+
+        .board-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            right: -75%;
+            padding-top: 4em;
+
+            p {
+                margin: 0;
+                font-family: Poppins-Light;
+                font-size: 0.8rem;
+            }
+            h4 {
+                margin: 0;
+                line-height: 1;
+                font-weight: normal;
+                font-size: 2rem;
+            }
+
+            .board-price {
+                margin-top: 2em;
+                p {
+                    color: $pink;
+                    font-size: 1.5rem;
+                }
+                a {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
